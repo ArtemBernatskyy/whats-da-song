@@ -44,25 +44,12 @@ class App extends React.Component {
   }
 
   async checkPermissions() {
-    const permissionsCheck = await navigator.permissions.query({name:'microphone'})
-    if (permissionsCheck.state === AUDIO_PERMISSIONS_CHOICES.GRANTED) {
-      this.showNotification('info', 'Audio permissions granted');
+    try {
+      let stream = await navigator.mediaDevices.getUserMedia({ audio: true, video: false });
+      stream.getTracks().forEach(track => track.stop());
+      this.showNotification('success', 'Audio permissions granted');
       this.setState({ permissionsStatus: AUDIO_PERMISSIONS_CHOICES.GRANTED });
-    } else if (permissionsCheck.state === AUDIO_PERMISSIONS_CHOICES.PROMPT) {
-      this.showNotification('info', 'Plz allow audio permissions');
-      this.setState({ permissionsStatus: AUDIO_PERMISSIONS_CHOICES.PROMPT });
-      try {
-        let stream = await navigator.mediaDevices.getUserMedia({ audio: true, video: false });
-        stream.getTracks().forEach(track => track.stop());
-        this.showNotification('success', 'Audio permissions granted');
-        this.setState({ permissionsStatus: AUDIO_PERMISSIONS_CHOICES.GRANTED });
-      } catch (error) {
-        if (error.message && error.message === 'Permission denied') {
-          this.showNotification('error', 'Audio permissions denied');
-          this.setState({ permissionsStatus: AUDIO_PERMISSIONS_CHOICES.DENIED });
-        }
-      }
-    } else if (permissionsCheck.state === AUDIO_PERMISSIONS_CHOICES.DENIED) {
+    } catch (error) {
       this.showNotification('error', 'Audio permissions denied');
       this.setState({ permissionsStatus: AUDIO_PERMISSIONS_CHOICES.DENIED });
     }
