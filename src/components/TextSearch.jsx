@@ -68,7 +68,7 @@ class TextSearch extends React.Component {
                         <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/michael-rudyy/" title="Channel 2"/>
                       </li>
                       <li className="television__channel">
-                        <a target="_blank" rel="noopener noreferrer" href="hhttps://www.linkedin.com/in/ikasyk/" title="Channel 3"/>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/ikasyk/" title="Channel 3"/>
                       </li>
                     </ul>
                   </div>
