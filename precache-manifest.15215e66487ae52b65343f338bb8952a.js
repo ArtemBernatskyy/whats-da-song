@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "67be127cb39baee40eeeccfbeab63b48",
+    "revision": "90b47462bc8bef46b44a8750ee4af77c",
     "url": "/whats-da-song/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/whats-da-song/static/css/2.5dbdccff.chunk.css"
   },
   {
-    "revision": "b8a0d388f0b3c7b966b4",
-    "url": "/whats-da-song/static/css/main.61c289bf.chunk.css"
+    "revision": "a811607576eb89af1fc0",
+    "url": "/whats-da-song/static/css/main.6df8f5b4.chunk.css"
   },
   {
     "revision": "c567ab78e1b49299714e",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/whats-da-song/static/js/2.91e5c937.chunk.js.LICENSE"
   },
   {
-    "revision": "b8a0d388f0b3c7b966b4",
+    "revision": "a811607576eb89af1fc0",
     "url": "/whats-da-song/static/js/main.d378ba8a.chunk.js"
   },
   {

@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/whats-da-song/static/css/main.61c289bf.chunk.css",
+    "main.css": "/whats-da-song/static/css/main.6df8f5b4.chunk.css",
     "main.js": "/whats-da-song/static/js/main.d378ba8a.chunk.js",
     "main.js.map": "/whats-da-song/static/js/main.d378ba8a.chunk.js.map",
     "runtime-main.js": "/whats-da-song/static/js/runtime-main.68bee81e.js",
@@ -9,17 +9,17 @@
     "static/js/2.91e5c937.chunk.js": "/whats-da-song/static/js/2.91e5c937.chunk.js",
     "static/js/2.91e5c937.chunk.js.map": "/whats-da-song/static/js/2.91e5c937.chunk.js.map",
     "index.html": "/whats-da-song/index.html",
-    "precache-manifest.713ae6b2ccdaa06083f2fa53b7c685e8.js": "/whats-da-song/precache-manifest.713ae6b2ccdaa06083f2fa53b7c685e8.js",
+    "precache-manifest.15215e66487ae52b65343f338bb8952a.js": "/whats-da-song/precache-manifest.15215e66487ae52b65343f338bb8952a.js",
     "service-worker.js": "/whats-da-song/service-worker.js",
     "static/css/2.5dbdccff.chunk.css.map": "/whats-da-song/static/css/2.5dbdccff.chunk.css.map",
-    "static/css/main.61c289bf.chunk.css.map": "/whats-da-song/static/css/main.61c289bf.chunk.css.map",
+    "static/css/main.6df8f5b4.chunk.css.map": "/whats-da-song/static/css/main.6df8f5b4.chunk.css.map",
     "static/js/2.91e5c937.chunk.js.LICENSE": "/whats-da-song/static/js/2.91e5c937.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.68bee81e.js",
     "static/css/2.5dbdccff.chunk.css",
     "static/js/2.91e5c937.chunk.js",
-    "static/css/main.61c289bf.chunk.css",
+    "static/css/main.6df8f5b4.chunk.css",
     "static/js/main.d378ba8a.chunk.js"
   ]
 }
