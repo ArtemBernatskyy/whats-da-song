@@ -2,6 +2,8 @@
 
 > [To] hear once is better than thousand words
 
+[Click for demo](https://artembernatskyy.github.io/whats-da-song/)
+
 
 ### Project structure
 All code is placed in `src` folder, `gh-pages` is for deploying to Github pages
