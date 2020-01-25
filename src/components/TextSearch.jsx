@@ -50,7 +50,7 @@ class TextSearch extends React.Component {
       <React.Fragment>
         <div className={`modal-window ${isModalOpen ? 'modal-window--visible': ''}`}>
           <div>
-            <input onChange={e => this.emitChangeDebounced(e.target.value)} placeholder="Search by lyrics" />
+            <input autoFocus onChange={e => this.emitChangeDebounced(e.target.value)} placeholder="Search by lyrics" />
 
             {song &&
               <div className="television">
