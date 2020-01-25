@@ -1,5 +1,18 @@
 $lyrics-button-width: 60px;
 
+@mixin breakpoint($point) {
+    @if $point==tabletmobile {
+        @media (max-width: 1024px) and (min-width: 320px) {
+            @content ;
+        }
+    }
+    @else if $point==mobile {
+        @media (max-width: 480px) and (min-width: 320px) {
+            @content ;
+        }
+    }
+}
+
 .lyrics-search {
   cursor: pointer;
   position: absolute;
@@ -19,6 +32,10 @@ $lyrics-button-width: 60px;
 
   &--opened {
     box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.3);
+
+    @include breakpoint(mobile) {
+      margin-top: 40px;
+    }
   }
 }
 
@@ -109,6 +126,13 @@ iframe {
 .television {
   width: 450px;
   margin: 0 auto;
+
+  @include breakpoint(mobile) {
+    transform: scale(0.7, 0.7);
+    width: 100%;
+    position: absolute;
+    left: 0;
+  }
 }
 
 .television__center {
