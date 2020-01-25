@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/whats-da-song/precache-manifest.15215e66487ae52b65343f338bb8952a.js"
+  "/whats-da-song/precache-manifest.7573e49a1582c1b096168af3180355af.js"
 );
 
 self.addEventListener('message', (event) => {
