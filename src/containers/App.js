@@ -1,13 +1,12 @@
 import React from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFont } from '@fortawesome/free-solid-svg-icons'
 import classNames from 'classnames';
 import axios from 'axios';
 
-import './styles/App.scss';
-import { AUDIO_PERMISSIONS_CHOICES } from './constants';
+import '../styles/App.scss';
+import TextSearch from '../components/TextSearch';
+import { AUDIO_PERMISSIONS_CHOICES } from '../constants/app';
 
 
 class App extends React.Component {
@@ -121,7 +120,7 @@ class App extends React.Component {
         this.showNotification('warning', "Can't find any matching song")
       }
     } catch {
-        this.showNotification('error', 'Backend error');
+        this.showNotification('warning', "Can't find any matching song")
     }
   }
 
@@ -144,9 +143,7 @@ class App extends React.Component {
         </div>
 
         {!isAnimating &&
-          <div className="lyrics-search">
-            <FontAwesomeIcon icon={faFont} />
-          </div>
+          <TextSearch />
         }
 
         <ToastContainer />

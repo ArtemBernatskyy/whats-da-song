@@ -227,21 +227,3 @@ body {
     animation: outer-circle-2 1.5s linear infinite;
   }
 }
-
-$lyrics-button-width: 60px;
-
-.lyrics-search {
-  cursor: pointer;
-  position: absolute;
-  top: 74%;
-  left: calc(50% - #{$lyrics-button-width} / 2);
-  border-radius: 100%;
-  width: $lyrics-button-width;
-  height: $lyrics-button-width;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  color: #0678fe;
-  font-size: 20px;
-  align-items: center;
-}
